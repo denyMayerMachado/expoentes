@@ -1,0 +1,366 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #043045;
+}
+
+.secao {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.botoes img{
+    height: 50px;
+}
+
+#creditos {
+    position: absolute;
+    right: 0%;
+    height: 60px;
+    margin: 10px;
+}
+
+.titulo_e_botao_iniciar {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-60%);
+    text-align: center;   
+}
+
+h1 {
+    font-family: 'Elsie Swash Caps', serif;
+    font-size: 2em;
+    color: #fff3a8;
+}
+
+#iniciar img{
+    height: 60px;
+    margin-top: 30px;
+}
+
+.capa {
+    background-image: url(./imagens/mobile_capa_fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    height: 100vh;
+}
+
+/*MENU*/
+
+.cartoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #043045; 
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#cartao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: #fff3a8;
+    height: 103px;
+    width: 90vw;
+    
+    border: 3px solid #cdaa04;
+    border-radius: 15px;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 10, 0.33);
+    overflow: hidden;
+}
+
+#foto_no_cartao {
+    height: 103px;
+    width: 103px;
+}
+
+#foto_e_nome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+h2 {
+    font-family: 'Elsie Swash Caps', serif;
+    font-size: 1.5em;
+    color: #043045;
+}
+
+#avancar img{
+    height: 60px;
+    margin-right: 10px;
+}
+
+/*BIOGRAFIAS*/
+
+#tarsila_do_amaral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #043045;
+    height: 100%;
+}
+
+#foto_na_biografia img{
+    width: 100vw;
+}
+
+h1 {
+    font-family: 'Elsie Swash Caps', serif;
+    color: #FFF59B;
+    font-size: 2em;
+    text-align: center;
+    margin: 25px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: #d4e5f0;
+    margin: 0 40px 40px 40px;
+}
+
+#botoes_das_biografias {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#botoes_das_biografias img {
+    height: 50px;
+}
+
+#botao_fechar {
+    margin-bottom: 35px;
+}
+
+/*OBRAS*/
+
+#imagem_da_obra_abaporu img{
+    width: 100vw;
+}
+
+#imagem_da_obra_o_farol img{
+    width: 100vw;
+}
+
+#imagem_da_obra img{
+    width: 100vw;
+}
+
+h3 {
+    font-family: 'Elsie Swash Caps', 'Bebas Neue', sans-serif;
+    color: #fff3a8;
+    font-size: 3em;
+    margin: 25px 40px;
+}
+
+@media screen and (min-width: 768px) {
+    #creditos {
+        margin: 20px;
+    }
+
+    #titulo {
+        font-size: 2.8em;
+        margin-top: 90px;
+        line-height: 1.3em;
+    }
+
+    .capa {
+        background-image: url(./imagens/desktop_capa_fundo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top left;
+        height: 100vh;
+    }
+
+    /*MENU*/
+
+    .cartoes {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+
+    #cartao {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        background-color: #fff3a8;
+        height: 460px;
+        width: 180px;
+        border: 3.5px solid #cdaa04;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 10, 0.33);
+        overflow: hidden;
+    }
+    
+    #foto_e_nome {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #foto_no_cartao {
+        height: 180px;
+        width: 180px;
+    }
+
+    h2 {
+        font-family: 'Elsie Swash Caps', serif;
+        color: #043045;
+        font-size: 1.6em;
+        margin-top: 20px;
+    }
+
+    #avancar img{
+        width: 60px;
+        margin-bottom: 20px;
+    }
+
+    /*BIOGRAFIAS*/
+
+    .biografias {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        position: absolute;
+        background-color: #043045;
+        height: 534px;
+        width: 964px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        box-shadow: 0 0 10px rgba(0, 0, 10, 0.33);
+    }
+
+    #foto_na_biografia img{
+        width: 400px;
+    }
+
+    h1 {
+        margin-top: 80px ;
+        font-size: 2.5em;
+        margin: 80px 0px 15px 0px;
+        line-height: 1em;
+    }
+
+    #texto_da_biografia {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        align-items: center;
+        width: 100%;
+
+        text-indent: 40px;
+        line-height: 1.5em;
+    }
+
+    p {
+        margin: 0 40px 30px 60px;
+    }
+
+    #botoes_das_biografias {
+        display: flex;
+        flex-direction: row;
+        
+        align-items: center;
+        margin-bottom: 60px;
+
+        
+    }
+
+    #botao_fechar {
+        margin: 0;
+    }
+
+    /*OBRAS*/
+
+    .obras {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        position: absolute;
+        background-color: white;
+        height: 534px;
+        width: 964px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        box-shadow: 0 0 10px rgba(0, 0, 10, 0.33);
+    }
+
+    #imagem_da_obra_abaporu img{
+        width: 350px;
+        box-shadow: 0 0 10px rgba(0, 0, 10, 0.33);
+        margin-left: 60px;
+    }
+
+    #imagem_da_obra_o_farol img{
+        width: 460px;
+        box-shadow: 0 0 10px rgba(0, 0, 10, 0.33);
+        margin-left: 40px;
+    }
+
+    #imagem_da_obra img{
+        width: 220px;
+        box-shadow: 0 0 10px rgba(0, 0, 10, 0.33);
+        margin-left: 60px;
+    }
+
+    h3 {
+        font-family: 'Elsie Swash Caps', 'Bebas Neue', sans-serif;
+        color: #043045;
+        font-size: 3em;
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    #texto_das_obras {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+        width: 100%;
+    }
+
+    #texto_das_obras > p {
+        color: #043045;
+        text-indent: 40px;
+        line-height: 1.5em;
+    }
+    }
+    

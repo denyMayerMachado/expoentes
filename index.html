@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conteúdo Digital</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!-- CAPA -->
+	<section class="secao capa" id="capa">
+		<a class="botoes" id="creditos" target="_self"><img src="./imagens/botao_creditos.svg"
+				alt="Botão para os créditos."></a>
+		<div class="titulo_e_botao_iniciar">
+			<h1 id="titulo" >Expoentes Femininos<br> do Modernismo Brasileiro</h1>
+			<a id="iniciar" onclick="pularTela('capa','menu')"><img src="./imagens/botao_iniciar.svg"
+					alt="Botão para avançar para o menu."></a>
+		</div>
+	</section>
+	<!-- MENU -->
+	<section class="secao menu" id="menu" style="display: none">
+		<ul class="cartoes">
+
+			<li id="cartao">
+				<div id=foto_e_nome>
+					<img id="foto_no_cartao" src="./imagens/botao_tarsila_do_amaral.jpg"
+						alt="Imagem de Tarsila do Amaral.">
+					<h2>Tarsila<br>do Amaral</h2>
+				</div>
+				<div>
+					<a id="avancar" onclick="pularTela('menu','tarsila_do_amaral')"><img
+							src="./imagens/botao_avancar.svg"
+							alt="Botão para avançar para a biografia de Tarsila do Amaral."></a>
+				</div>
+			</li>
+
+			<li id="cartao">
+				<div id=foto_e_nome>
+					<img id="foto_no_cartao" src="./imagens/botao_anita_malfatti.jpg" alt="Imagem de Anita Malfatti.">
+					<h2>Anita<br>Malfatti</h2>
+				</div>
+				<div>
+					<a id="avancar" onclick="pularTela('menu','anita_malfatti')"><img src="./imagens/botao_avancar.svg"
+							alt="Botão para avançar para a biografia de Anita Malfatti."></a>
+				</div>
+			</li>
+			<li id="cartao">
+				<div id=foto_e_nome>
+					<img id="foto_no_cartao" src="./imagens/botao_cecilia_meirelles.jpg"
+						alt="Imagem de Cecília Meirelles.">
+					<h2>Cecília<br>Meirelles</h2>
+				</div>
+				<div>
+					<a id="avancar" onclick="pularTela('menu','cecilia_meirelles')"><img
+							src="./imagens/botao_avancar.svg"
+							alt="Botão para avançar para a biografia de Cecília Meirelles."></a>
+				</div>
+			</li>
+			<li id="cartao">
+				<div id=foto_e_nome>
+					<img id="foto_no_cartao" src="./imagens/botao_rachel_de_queiroz.jpg"
+						alt="Imagem de Rachel de Queiroz.">
+					<h2>Rachel<br>de Queiroz</h2>
+				</div>
+				<div>
+					<a id="avancar" onclick="pularTela('menu','rachel_de_queiroz')"><img
+							src="./imagens/botao_avancar.svg"
+							alt="Botão para avançar para a biografia de Rachel de Queiroz."></a>
+				</div>
+			</li>
+			<li id="cartao">
+				<div id=foto_e_nome>
+					<img id="foto_no_cartao" src="./imagens/botao_clarice_lispector.jpg"
+						alt="Imagem de Clarice Lispector.">
+					<h2>Clarice<br>Lispector</h2>
+				</div>
+				<div>
+					<a id="avancar" onclick="pularTela('menu','clarice_lispector')"><img
+							src="./imagens/botao_avancar.svg"
+							alt="Botão para avançar para a biografia de Clarice Lispector."></a>
+				</div>
+			</li>
+	</section>
+
+	<!-- BIOGRAFIAS -->
+
+	<section>
+		<section class="secao_biografias" id="tarsila_do_amaral" style="display: none">
+			<div class="biografias">
+				<div id="foto_na_biografia">
+					<img src="./imagens/tarsila_do_amaral.jpg" alt="Imagem de Tarsila do Amaral.">
+				</div>
+
+				<div id="texto_da_biografia">
+
+					<h1>Tarsila do Amaral<br>(1886-1973)</h1>
+
+					<p>Tarsila do Amaral foi uma das figuras centrais do movimento modernista no Brasil. Apesar de não
+						ter participado diretamente da Semana de 22 integrou-se em 1926 aos intelectuais modernistas.
+						Sua obra atravessou três fases denominadas Pau-Brasil, Antropofágica e Social.</p>
+
+					<div id="botoes_das_biografias">
+						<a class="botoes" onclick="pularTela('tarsila_do_amaral','abaporu')"><img src="./imagens/botao_uma_obra.svg   "
+								alt="Botão para o início do conteúdo."></a>
+						<a class="botoes" id="botao_fechar" onclick="pularTela('tarsila_do_amaral','menu')"><img
+								src="./imagens/botao_fechar.svg" alt="Botão para o início do conteúdo."></a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+	</section>
+
+	<section>
+		<section class="secao_biografias" id="anita_malfatti" style="display: none">
+			<div class="biografias">
+				<div id="foto_na_biografia">
+					<img src="./imagens/anita_malfatti.jpg" alt="Imagem de Anita Malfatti.">
+				</div>
+
+				<div id="texto_da_biografia">
+
+					<h1>Anita Malfatti<br>(1889-1964)</h1>
+
+					<p>Anita Malfatti foi uma das mais importantes artistas do modernismo brasileiro. Na Semana de 22, o
+						uso de certa deformação moderada, fugindo dos modelos acadêmicos da pintura da época, causou
+						alvoroço na elite provinciana de São Paulo.</p>
+
+					<div id="botoes_das_biografias">
+						<a onclick="pularTela('anita_malfatti','o_farol')"><img src="./imagens/botao_uma_obra.svg   "
+								alt="Botão para o início do conteúdo."></a>
+						<a id="botao_fechar" onclick="pularTela('anita_malfatti','menu')"><img
+								src="./imagens/botao_fechar.svg" alt="Botão para o início do conteúdo."></a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+	</section>
+
+	<section>
+		<section class="secao_biografias" id="cecilia_meirelles" style="display: none">
+			<div class="biografias">
+				<div id="foto_na_biografia">
+					<img src="./imagens/cecilia_meirelles.jpg" alt="Imagem de Cecília Meirelles.">
+				</div>
+
+				<div id="texto_da_biografia">
+
+					<h1>Cecília Meireles<br>(1901-1964)</h1>
+
+					<p>Cecília Meireles foi a primeira mulher que conquistou destaque e prestígio na literatura brasileira, publicando mais de 50 obras. Foi uma das poetisas mais influentes na segunda fase do modernismo. Sua poesia é intimista e reflexiva, de profunda sensibilidade.</p>
+
+					<div id="botoes_das_biografias">
+						<a onclick="pularTela('cecilia_meirelles','viagem')"><img src="./imagens/botao_uma_obra.svg   "
+								alt="Botão para o início do conteúdo."></a>
+						<a id="botao_fechar" onclick="pularTela('cecilia_meirelles','menu')"><img
+								src="./imagens/botao_fechar.svg" alt="Botão para o início do conteúdo."></a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+	</section>
+
+	<section>
+		<section class="secao_biografias" id="rachel_de_queiroz" style="display: none">
+			<div class="biografias">
+				<div id="foto_na_biografia">
+					<img src="./imagens/rachel_de_queiroz.jpg" alt="Imagem de Rachel de Queiroz.">
+				</div>
+
+				<div id="texto_da_biografia">
+
+					<h1>Rachel de Queiroz<br>(1910-2003)</h1>
+
+					<p>Rachel de Queiroz integra o modernismo por meio de sua prosa regionalista, retratando o nordeste,
+						mais precisamente o Ceará, em uma linguagem enxuta e viva. A autora consegue aliar a preocupação
+						social à preocupação com os traços psicológicos dos personagens.</p>
+
+					<div id="botoes_das_biografias">
+						<a onclick="pularTela('rachel_de_queiroz','o_quinze')"><img src="./imagens/botao_uma_obra.svg"
+								alt="Botão para o início do conteúdo."></a>
+						<a id="botao_fechar" onclick="pularTela('rachel_de_queiroz','menu')"><img
+								src="./imagens/botao_fechar.svg" alt="Botão para o início do conteúdo."></a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+	</section>
+
+	<section>
+		<section class="secao_biografias" id="clarice_lispector" style="display: none">
+			<div class="biografias">
+				<div id="foto_na_biografia">
+					<img src="./imagens/clarice_lispector.jpg" alt="Imagem de Clarice Lispector.">
+				</div>
+
+				<div id="texto_da_biografia">
+
+					<h1>Clarice Lispector<br>(1920-1977)</h1>
+
+					<p>Nascida na Ucrânia, Clarice Lispector é uma das escritoras mais aclamadas da literatura brasileira. Surpreendeu ao inserir o inconsciente em sua obra, mostrando um estilo extremamente intimista. A autora é considerada modernista da terceira fase do movimento, também chamada de Geração de 45.</p>
+
+					<div id="botoes_das_biografias">
+						<a onclick="pularTela('clarice_lispector','cidade_sitiada')"><img src="./imagens/botao_uma_obra.svg   "
+								alt="Botão para o início do conteúdo."></a>
+						<a id="botao_fechar" onclick="pularTela('clarice_lispector','menu')"><img
+								src="./imagens/botao_fechar.svg" alt="Botão para o início do conteúdo."></a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+	</section>
+
+	<!-- OBRAS -->
+
+	<section>
+		<section class="secao_obras" id="abaporu" style="display: none">
+			<div class="obras">
+				<div id="imagem_da_obra_abaporu">
+					<img src="./imagens/tarsila_do_amaral_abaporu.jpg" alt="Imagem da tela 'Abaporu'.">
+				</div>
+
+				<div id="texto_das_obras">
+
+					<h3>Abaporu</h3>
+
+					<p>A obra é considerada um marco modernista. A palavra “abaporu” vem do tupi (aba (homem), pora
+						(gente) e ú (comer), que significa “homem que come gente”, servindo de inspiração para o
+						Movimento Antropofágico brasileiro.</p>
+
+					<div id="botoes_das_biografias">
+						<a onclick="pularTela('abaporu','tarsila_do_amaral')"><img src="./imagens/botao_voltar.svg   "
+								alt="Botão para o início do conteúdo."></a>
+						<a id="botao_fechar" onclick="pularTela('abaporu','menu')"><img src="./imagens/botao_fechar.svg"
+								alt="Botão para o início do conteúdo."></a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="secao_obras" id="o_farol" style="display: none">
+			<div class="obras">
+				<div id="imagem_da_obra_o_farol">
+					<img src="./imagens/anita_malfatti_o_farol.jpg" alt="Imagem da tela 'O Farol'.">
+				</div>
+
+				<div id="texto_das_obras">
+
+					<h3>O Farol</h3>
+
+					<p>Na obra O Farol, a pintora traz à tona as influências expressionistas, apresentando no plano de
+						fundo pinceladas rápidas e dinâmicas com cores fortes e vibrantes, lembrando algumas obras de
+						Vicent Van Gogh.</p>
+
+					<div id="botoes_das_biografias">
+						<a onclick="pularTela('o_farol','anita_malfatti')"><img src="./imagens/botao_voltar.svg   "
+								alt="Botão para o início do conteúdo."></a>
+						<a id="botao_fechar" onclick="pularTela('o_farol','menu')"><img src="./imagens/botao_fechar.svg"
+								alt="Botão para o início do conteúdo."></a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="secao_obras" id="viagem" style="display: none">
+			<div class="obras">
+				<div class="capas_de_livro" id="imagem_da_obra">
+					<img src="./imagens/cecilia_meirelles_viagem.jpg" alt="Imagem da capa do livro 'Viagem'.">
+				</div>
+
+				<div id="texto_das_obras">
+
+					<h3>Viagem</h3>
+
+					<p>Na obra literária Viagem, a autora relata uma viagem interior, introspectiva, ressaltando problemas enfrentados pelo ser humano como a solidão, a melancolia, o sonho, as saudades e o sofrimento.</p>
+
+					<div id="botoes_das_biografias">
+						<a onclick="pularTela('viagem','cecilia_meirelles')"><img src="./imagens/botao_voltar.svg   "
+								alt="Botão para o início do conteúdo."></a>
+						<a id="botao_fechar" onclick="pularTela('viagem','menu')"><img src="./imagens/botao_fechar.svg"
+								alt="Botão para o início do conteúdo."></a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<section class="secao_obras" id="o_quinze" style="display: none">
+				<div class="obras">
+					<div class="capas_de_livro" id="imagem_da_obra">
+						<img src="./imagens/rachel_de_queiroz_o_quinze.jpg" alt="Imagem da capa do livro 'O Quinze'.">
+					</div>
+
+					<div id="texto_das_obras">
+
+						<h3>O Quinze</h3>
+
+						<p>Em 1930, ela publica seu primeiro livro O Quinze, em que narra a seca histórica de 1915, no
+							Ceará.</p>
+
+						<div id="botoes_das_biografias">
+							<a onclick="pularTela('o_quinze','rachel_de_queiroz')"><img
+									src="./imagens/botao_voltar.svg   " alt="Botão para o início do conteúdo."></a>
+							<a id="botao_fechar" onclick="pularTela('o_quinze','menu')"><img
+									src="./imagens/botao_fechar.svg" alt="Botão para o início do conteúdo."></a>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+		</section>
+		<section class="secao_obras" id="cidade_sitiada" style="display: none">
+			<div class="obras">
+				<div class="capas_de_livro" id="imagem_da_obra">
+					<img src="./imagens/clarice_lispector_cidade_sitiada.jpg" alt="Imagem da capa do livro 'Cidade Sitiada'.">
+				</div>
+
+				<div id="texto_das_obras">
+
+					<h3>Cidade Sitiada</h3>
+
+					<p>No livro A Cidade Sitiada, Clarice Lispector apresenta a narrativa em terceira pessoa, com enredo simples. A própria autora considera um dos livros mais difíceis que escreveu, talvez por desumanizar ao extremo seus personagens, tornando-os mais humanos, criando assim um total paradoxo poético.</p>
+
+					<div id="botoes_das_biografias">
+						<a onclick="pularTela('cidade_sitiada','clarice_lispector')"><img src="./imagens/botao_voltar.svg   "
+								alt="Botão para o início do conteúdo."></a>
+						<a id="botao_fechar" onclick="pularTela('cidade_sitiada','menu')"><img src="./imagens/botao_fechar.svg"
+								alt="Botão para o início do conteúdo."></a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+		<!--!> JS SCRIPT <!-->
+		<script type="text/javascript">
+			function pularTela(esconder, mostrar) {
+				document.getElementById(esconder).style.display = "none";
+				document.getElementById(mostrar).style.display = "flex";
+			}
+		</script>
+</body>
+
+</html>
